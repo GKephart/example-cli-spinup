@@ -56,7 +56,7 @@ Thumbs.db
  12. add the new app.component.html to the @component decorator in `/ng/src/app.component.ts` 
 ```
 @ngComponent({
-selector: 'my-app',
+selector: 'app-root',
   templateUrl: './app.component.html',
 })
 ```
