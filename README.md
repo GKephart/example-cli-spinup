@@ -69,8 +69,8 @@ In order for the application to work successfully we must add what is called a r
 ``` 
 {
 	"/api": {
-				"target": "https://bootcamp-coders.cnm.edu/~username/project/public_html/",
-				"secure": "false"
+		"target": "https://bootcamp-coders.cnm.edu/~username/project/public_html/",
+		"secure": "false"
 	}
 }
 ```
