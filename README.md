@@ -39,8 +39,9 @@ Thumbs.db
  6. replace `/ng/src/app/app.module` with the app.module.ts in https://bootcamp-coders.cnm.edu/class-materials/angular2/introduction/
  7. add the packages below to the dependencies object in `/ng/package.json`
  ```
- "@ng-bootstrap/ng-bootstrap": "^4.0.0",
- "@auth0/angular-jwt": "2.0^"
+ "@ng-bootstrap/ng-bootstrap": "^4.0^",
+ "@auth0/angular-jwt": "2.0^",
+ "ngx-cookie":"4.1.2^"
  ```
  8. add the packages below to the dev dependencies object in `ng/package.json`
  ```
@@ -49,6 +50,21 @@ Thumbs.db
   "@fortawesome/fontawesome-free-regular": "^5.0.12",
   "@fortawesome/fontawesome-free-solid": "^5.0.12",
  ```
+ 9. add `@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');` to `/ng/src/styles.css`
+ 10. delete the template in @component at `/ng/src/app/app.component.ts`
+ 11. create `/ng/src/app/app.component.html` and add `<router-outlet></router-outlet>` to the template.
+ 12. add the new app.component.html to the @component decorator in `/ng/src/app.component.ts` 
+```
+@ngComponent({
+selector: 'my-app',
+  templateUrl: './app.component.html',
+})
+```
+13. create a generic splash component with a template
+* make sure to create both a `/ng/src/app/splash/splash.component.ts` and make sure to create both a `/ng/src/app/splash/splash.component.html` feel free to copy code from this repository`
+14. 
+ 
+
  
  
   
