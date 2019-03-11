@@ -62,7 +62,21 @@ selector: 'app-root',
 ```
 13. create a generic splash component with a template
 * make sure to create both a `/ng/src/app/splash/splash.component.ts` and make sure to create both a `/ng/src/app/splash/splash.component.html` feel free to copy code from this repository`
-14. 
+### Setting Up The Development Environment
+In order for the application to work successfully we must add what is called a reverse proxy to mimic the API requests we will be receiving once the application goes live. According to nginx.com a reverse proxy is a go‑between or intermediary server that forwards requests for content from the client to different servers. 
+1. update the `.gitignore` file with `*/proxy.conf.json`
+2. create the `/ng/proxy.conf.json` file (this file is unique to the user and must be updated to point at the users capstone project) 
+``` 
+{
+	"/api": {
+				"target": "https://bootcamp-coders.cnm.edu/~username/project/public_html/",
+				"secure": "false"
+	}
+}
+```
+3. remove `"start":"ng serve"` in `/ng/package.json` and replace it with `"start": "ng serve --proxy-config proxy.conf.json"`
+4. run `npm start` in the terminal/power-shell to start developing your app 
+
  
 
  
